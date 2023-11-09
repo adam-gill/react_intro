@@ -1,0 +1,50 @@
+React - js library for building user interfaces
+- easy to use
+- maintainable 
+- scalable 
+- most popular frontend framework
+
+Reusable Components = reduce redundance and make code cleaner and easier to write
+(make App.js to App.jsx to make tags auto complete)
+
+Props = make components dynamic (able to be changed and modified w/params)
+
+Event Handlers = executes code when an event happens i.e. click
+
+
+*** Hooks = most important hooks are useState and useEffect
+- many others also
+- 'can build any website with two above'
+
+- useState = define variables in React
+    - rerenders page on variable change automatically
+
+Conditional Rendering = render a component when a certain condition is met
+From App.jsx line 8:
+
+           variable    function to 
+                       change state
+                                        default value
+  const [showModal, setShowModal] = useState(false); // initially we don't want to see Modal
+
+only way to change showModel is to call setShowModal and change the variable showModal
+
+Changing Different Data Types:
+- Numbers: setNum(10)
+- Booleans: setBool(true)
+- Strings: setStr('Lebron')
+
+'Adding to' Different Data Types (using prev value of variable and modifying it):
+- Numbers: setNum(10) setNum(prevNum => prevNum + 10)
+- Booleans: setBool(true) setBool(prevBool => !prevBool) 
+- Strings: setStr('Lebron') setStr(prevStr => prevStr + 'James')
+- Objects: setObj(prevObj => ({...prevObj, quantity: prevObj.quantity + 1}))
+- Arrays: setArr(prevArr => ([...prevArr, 5]))
+
+
+Emitting Events = parents (App.jsx) handle logic and children (Todo.jsx) help display content
+- 1. need function in parent
+- 2. pass prop to child 
+- 3. child accepts prop
+- 4. child executes the prop
+
