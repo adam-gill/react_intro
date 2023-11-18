@@ -48,3 +48,6 @@ Emitting Events = parents (App.jsx) handle logic and children (Todo.jsx) help di
 - 3. child accepts prop
 - 4. child executes the prop
 
+ROUTING = lets you navigate around your website
+- change url of the page
+
